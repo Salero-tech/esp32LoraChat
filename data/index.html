@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP32 Web Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>LORA Transiver</h1>
+
+    <div id="chatbox" class="recMsg"></div>
+
+    <div class="userSend">
+      <form action="javascript:void(0);" onsubmit="send()" autocomplete="off">
+        <input class="button" id="loraSMG" />
+        <button class="button button2">SEND</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

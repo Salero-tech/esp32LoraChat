@@ -1,0 +1,61 @@
+html {
+    font-family: Helvetica;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    scroll-behavior: inherit;
+  }
+  h1{
+    color: #0F3376;
+    padding: 2vh;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  .button {
+    display: inline-block;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 2px;
+    cursor: pointer;
+  }
+  .button2 {
+    background-color: #f44336;
+  }
+  .userSend {
+    display: inline-flex;
+    bottom: 0;
+    
+  }
+  .recMsg {
+    height: 80vh;
+    background-color: gray;
+    max-height: 600px;
+    overflow: scroll;
+  }
+
+
+  .msg p {
+    margin: 0;
+    padding: 0;
+    width: min-content;
+    border-radius: 3px;
+  }
+
+  .msg .author {
+    font-weight: bold;
+  }
+
+  .fromLora p {
+    background-color: red;
+    margin-left: auto;
+  }
+
+  .fromMe p{
+    background-color: aquamarine;
+  }
