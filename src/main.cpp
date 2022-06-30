@@ -38,8 +38,8 @@
 
 //wifi
 // SSID & Password
-const char* ssid = "Elektroniker_E3_2.4GHz";  // Enter your SSID here
-const char* password = "%!MSW33!%";  //Enter your Password here
+const char* ssid = "LoRa-Chat";  //"Elektroniker_E3_2.4GHz";  // Enter your SSID here
+const char* password = "LoRapwd0";  //Enter your Password here
 
 //packet packet_counter
 int packet_counter = 0;
@@ -158,16 +158,17 @@ void setup() {
 
   //wlan
   //connect
-  WiFi.begin(ssid, password);
+  WiFi.softAP(ssid, password);
+  /*
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
   }
-
+*/
   //ip
   display.setCursor(0,10);
   display.print("IP: ");
   display.setCursor(20,10);
-  display.print(WiFi.localIP());  //Show ESP32 IP on serial
+  display.print(WiFi.softAPIP());  //Show ESP32 IP on serial
   display.display();
 
   //web server

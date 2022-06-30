@@ -1,61 +1,78 @@
 html {
     font-family: Helvetica;
-    display: flex;
-    margin: 0px auto;
-    justify-content: center;
+    display: grid;
     scroll-behavior: inherit;
+    gap: 10px;
   }
-  h1{
-    color: #0F3376;
-    padding: 2vh;
+
+h1{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  color: #0F3376;
+  padding: 2vh;
+  text-align: center;
   }
-  p{
-    font-size: 1.5rem;
+p{
+  font-size: 1.5rem;
   }
-  .button {
-    display: inline-block;
-    background-color: #008CBA;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    padding: 16px 40px;
-    text-decoration: none;
-    font-size: 30px;
-    margin: 2px;
-    cursor: pointer;
+.button {
+  background-color: #008CBA;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 40px;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 2px;
+  cursor: pointer;
   }
-  .button2 {
-    background-color: #f44336;
+.button2 {
+  grid-column-start: 10;
+  background-color: #f44336;
+  grid-row-start: 10;
   }
-  .userSend {
-    display: inline-flex;
-    bottom: 0;
-    
+
+.inputfield {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 10;
   }
-  .recMsg {
-    height: 80vh;
-    background-color: gray;
-    max-height: 600px;
-    overflow: scroll;
+
+.userSend {
+  display: grid;
+  
   }
 
 
-  .msg p {
-    margin: 0;
-    padding: 0;
-    width: min-content;
-    border-radius: 3px;
+.recMsg {
+  padding: 20px 0;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  background-color: gray;
+  /*height: 80vh;
+  
+  max-height: 600px;
+  overflow: scroll;
+  */
   }
 
-  .msg .author {
-    font-weight: bold;
+
+.msg p {
+  margin: 0;
+  padding: 0;
+  width: min-content;
+  border-radius: 3px;
   }
 
-  .fromLora p {
-    background-color: red;
-    margin-left: auto;
+.msg .author {
+  font-weight: bold;
   }
 
-  .fromMe p{
-    background-color: aquamarine;
+.fromLora p {
+  background-color: red;
   }
+
+.fromMe p{
+  background-color: aquamarine;
+  }
+
