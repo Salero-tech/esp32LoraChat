@@ -5,8 +5,8 @@ const Sources = {
 
 //loraSendUrl = "/api/lorasend";
 //loraRecUrl = "/api/lorarec"
-loraSendUrl = "http://192.168.0.178/api/lorasend";
-loraRecUrl = "http://192.168.0.178/api/lorarec"
+loraSendUrl = "/api/lorasend";
+loraRecUrl = "/api/lorarec"
 
 //scroll
 var scrollPosOld = 0;
